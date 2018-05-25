@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongo Scraper</title>
+    <!-- CSS Reset Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> 
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- CSS Sheet -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+</head>
+
+<body>
+
+    <header>
+        
+        <nav>
+            <div class="nav-wrapper blue lighten-1">
+                <a href="" class="brand-logo center">Mongo Scraper</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                                <a href="/"></a>
+                            </li>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./saved.html">Saved Articles</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+               <!--  <div class="divider"></div> -->
+                <!--  <h2>Mongo Scraper</h2> -->
+                <h2>New York Times Edition</h2>
+                <a href="/saved">
+                    <button id="scrapeBtn" class="btn waves-effect waves-light blue lighten-3" type="submit" name="action">Scrape new articles
+                        <i class="material-icons right">send</i>
+                        
+                    </button>
+                </a>
+            </div>
+            <div class="divider"></div> 
+           <h3 class= "scrape-results"> Scraped Results</h3>
+   </div>
+   
+   </section>
+    <section>
+        <div id="scrapeResults" class="container container-fluid">
+            <div id="articles"></div>
+            <br>
+            <div id="notes"></div>
+    
+            </div>
+    
+            
+        </div>
+    </section>
+
+    
+
+    <footer class="page-footer blue lighten-1" style="position:fixed;bottom:0;left:0;width:100%" ;>
+        <div class="footer-copyright blue lighten-1">
+            <span id='footer-text'>© 2018 Mongo Scraper </span>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
+
+
+
+
